@@ -1,0 +1,268 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#page {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas: "nav head"
+                         "nav  section"
+                         "nav  main"
+                         "nav main";
+    grid-template-rows: 54px 30px 1fr 30px;
+    grid-template-columns: 75px 1fr;
+  }
+  #page>section{
+        background-color: whitesmoke;
+        display:flex;
+        justify-content:start;
+        font-size: 10px;
+        align-items: center;
+        border-bottom:1px solid #e8eaee;
+        
+  }
+  #page>section>div{
+    margin-left: 10px;
+  }
+  #page>section>div>p{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+  }
+  #page>section>div>p:hover{
+    border-bottom: 3px solid blue;
+  }
+  #page>section>div>.help{
+    border-bottom: 3px solid blue;
+  }
+  .notification>div{
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-right:10px;
+  }
+  input{
+      border:none;
+  }
+  #page > nav {
+     box-sizing: border-box;
+    font-size: 10px;
+    grid-area: nav;
+    color: white;
+    background-color:#3A4354;
+    
+  }
+  #page>nav>div{
+      padding: 10px;
+      font-size: 10px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+  }
+  
+  #page > main {
+    grid-area: main;
+    background-color: #f3f3f7;
+    display: flex;
+  }
+  #page>main>div{
+    margin-top: 10px;
+    margin-left:10px;  
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  #page>main>.ques{
+    background-color: white;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    height: 230px;
+    margin-left: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  main>div>div>div:hover{
+    background-color: #d1e4f6;
+  }
+  .ques>div:hover{
+    background-color: #d1e4f6;
+  }
+  .ques>div{
+    padding: 10px;
+    border-bottom:1px solid #f3f3f7;
+  }
+  .ques>div>h3{
+    font-size:10px;
+    font-weight: lighter;
+    padding-left: 10px;
+    padding-right: 80px;
+  }
+  .ques>div>p{
+    color: #b3b6be;
+    padding-left: 10px;
+    font-size: 10px;
+  }
+  .ques>.ques1{
+    padding:7px;
+    font-size: 10px;
+    background-color: #f3f3f7;
+    border: 1px solid #e8eaee;
+  }
+  .admin{
+    background-color: #d1e4f6;
+  }
+  .img1{
+    border-radius: 50%;
+  }
+  .admin-guide{
+    display: flex;
+    height:350px;
+    background-color: white;
+    flex-direction: column;
+    width:1050px;
+    justify-content: flex-start;
+    align-items:flex-start;
+  }
+  .org>div{
+    width:300px;
+    border: 1px solid #e8eaee;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:10px ;
+  }
+  .org{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .admin-content{
+    margin:10px;
+  }
+  .admin-content>h5{
+    font-weight: 200;
+  }
+  .admin-content>p{
+    color:#b3b6be;
+    font-size: 10px;
+  }
+  .org>.add{
+    display:flex;
+    width: 300px;
+    height:70px;
+    color: #3287C0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:2px dashed #3287C0;
+  }
+  .org>div>div>h1{
+    font-weight:lighter;
+    font-size: 15px;
+  }
+  .org>div>div>p{
+    color:#b3b6be;
+    font-size: 10px;
+  }
+  .org>div>div{
+    display: flex;
+    justify-content: space-between;
+  }
+  nav>div:hover{
+    background-color: grey;
+    cursor: pointer;
+  }
+  .monkey{
+    border-bottom: 1px solid #33384c;
+  }
+  .knowledge{
+    background-color: grey;
+  }
+  header{
+    display:flex;
+    justify-content: space-between;
+    
+  }
+  header>div{
+    display: flex;
+    align-self: center;
+    margin:10px;
+  }
+  header>div>div{
+    display: flex;
+
+  }
+  header>.notification>div{
+    margin-right:10px;
+  }
+  header>.notification>div>p{
+    color:#b3b6be;
+  }
+  header>.notification>div>h5{
+    font-weight:normal;
+    margin: 10px;
+  }
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  .down {
+    transform: rotate(45deg);
+  }
+  .search{
+    display: flex;
+    align-items: center;
+    height:54px;
+    border-right: 1px solid #e8eaee;
+  }
+  .search1{
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    height:54px;
+  }
+  @media only screen and (max-width: 600px) {
+    #page {
+      display: grid;
+      width: 100%;
+      height: 100vh;
+      grid-template-areas: "nav"
+                           "head"
+                           "section"
+                           "main";
+      grid-template-rows: 1fr 1fr 1fr 3fr;
+      grid-template-columns: 1fr;
+    }
+    #page>header{
+      display: flex;
+      flex-direction: column;
+      grid-area: head;
+      flex-wrap: wrap;
+    }
+    #page>section{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      grid-area: section;
+    }
+    #page>nav{
+      display:flex;
+      flex-wrap: wrap;
+      grid-area:nav;
+    }
+    #page>main{
+      display:flex;
+      flex-direction: column;
+      grid-area: main;
+    }
+    #page>main>.admin-guide{
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      height:auto;
+    }
+  }
